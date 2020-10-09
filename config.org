@@ -45,7 +45,7 @@ Features like line-numbers and spell-check being enabled are fairly standard wit
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 #+END_SRC
 
-While this is not strictly necessary I think using literate programming to walk new users through building their own config could be a helpful tool. Being able to export that org file as html right off the bat might be a "wow" factor for the user to show with the uninitiated. Org-mode supports HTML export natively but syntax highlighting is added through ~htmlize.el~.
+While this is not strictly necessary I think using literate programming to walk new users through building their own config could be a helpful tool. Being able to export that org file as html right off the bat might be a "wow" factor for the user to show with the uninitiated. Org-mode supports exporting to HTML natively but syntax highlighting is added through ~htmlize.el~.
 
 #+BEGIN_SRC emacs-lisp
 (use-package htmlize)
