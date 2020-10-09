@@ -40,7 +40,7 @@ A config by nature is personal preference but this section is even more subjecti
 Features like line-numbers and spell-check being enabled are fairly standard with modern editors. Emacs does syntax-highlighting by default but not spell-check (which I think is syntax highlighting for prose).
 
 #+BEGIN_SRC emacs-lisp
-(global-linum-mode 1)
+(global-display-line-numbers-mode 1) ;; For Emacs >= 26 else use linum-mode
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 #+END_SRC
